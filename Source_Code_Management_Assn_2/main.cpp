@@ -1,14 +1,28 @@
-//
-//  main.cpp
-//  Source_Code_Management_Assn_2
-//
-//  Created by Catlynne Quarles on 4/11/22.
-//
+// Catlynne Quarles
+// CIS 1202 R02
+// April 12, 2022
+// Source Code Management 2
 
 #include <iostream>
+#include <iomanip>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+float average(int i1, int i2, int i3)
+{
+    return i1 + i2 + i3 / 3.0f;
+}
+
+int main()
+{
+    int n1 =0 , n2 = 0, n3 = 0;
+    cout << "This program calculates the average of three numbers." << endl;
+    cout << "First number: "; cin >> n1;
+    cout << "Second number: "; cin >> n2;
+    cout << "Third number: "; cin >> n2;
+
+    float a = average(n1, n2, n3);
+
+    cout << setprecision(1) << fixed << "The average is " << a << endl;
+
     return 0;
 }
